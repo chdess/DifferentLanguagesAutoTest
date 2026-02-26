@@ -10,7 +10,7 @@ def test_visibility_of_button(browser):
     browser.get(link)
     try:
         basket_button = WebDriverWait(browser, 10).until(
-            EC.visibility_of_element_located((By.XPATH, "//button[contains(@class, 'btn-add-to-basket1')]"))
+            EC.visibility_of_element_located((By.XPATH, "//button[contains(@class, 'btn-add-to-basket')]"))
         )
         basket_button_is_visible = True
     except TimeoutException:
