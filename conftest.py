@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
-    parser.addoption('--browser-name', action='store', default='Chrome', help='Choose browsers: chrome or firefox, comma-separated')
+    parser.addoption('--browser-name', action='store', default='chrome', help='Choose browsers: chrome or firefox, comma-separated')
     parser.addoption('--language', action='store', default='en', help='Choose language, comma-separated')
 
 
